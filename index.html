@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090b14">
+<title>SpiderAI</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><div class="logo">✳</div><div>Spider<span>AI</span></div><button id="closeSidebar" class="mobile-only ghost" aria-label="Закрыть меню">×</button></div>
+    <button class="new-chat" id="newChat"><span>＋</span> Новый чат</button>
+    <div class="section-label">ТВОИ ДИАЛОГИ</div>
+    <div id="history" class="history"></div>
+    <div class="side-bottom"><div class="plan"><span class="spark">✦</span><b>SpiderAI</b><p>Твой помощник для идей, учёбы и кода.</p></div><div class="profile"><div class="avatar">S</div><div><b>Гость</b><small>Локальная версия</small></div><button class="ghost" id="clearHistory" title="Очистить историю">⌫</button></div></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button id="menuButton" class="ghost mobile-only" aria-label="Открыть меню">☰</button><div class="model"><i></i> SpiderAI <span>▾</span></div><div class="top-right"><span id="status" class="status">Демо-режим</span><button class="ghost theme" id="theme" title="Сменить тему">☼</button></div></header>
+    <section class="conversation" id="conversation">
+      <div class="welcome" id="welcome"><div class="hero-mark">✳</div><div class="eyebrow">ТВОЙ ИИ-АССИСТЕНТ</div><h1>Привет! Я <em>SpiderAI</em>.</h1><p>Чем займёмся сегодня?</p>
+        <div class="prompts">
+          <button class="prompt" data-prompt="Объясни, как работает искусственный интеллект, простыми словами"><span class="picon violet">✧</span><span><b>Объясни сложное</b><small>Простыми словами</small></span><span class="arrow">↗</span></button>
+          <button class="prompt" data-prompt="Придумай 5 идей для видео на YouTube Shorts"><span class="picon blue">▷</span><span><b>Придумай идеи</b><small>Для творчества и видео</small></span><span class="arrow">↗</span></button>
+          <button class="prompt" data-prompt="Помоги написать простой сайт на HTML и CSS"><span class="picon pink">{ }</span><span><b>Помоги с кодом</b><small>Разработка и обучение</small></span><span class="arrow">↗</span></button>
+          <button class="prompt" data-prompt="Составь план изучения новой темы на неделю"><span class="picon amber">◈</span><span><b>Учись новому</b><small>Пошаговые объяснения</small></span><span class="arrow">↗</span></button>
+        </div>
+      </div>
+      <div id="messages" class="messages" aria-live="polite"></div>
+    </section>
+    <footer class="composer-area"><form id="form" class="composer"><textarea id="input" rows="1" placeholder="Напиши сообщение SpiderAI..." aria-label="Сообщение"></textarea><div class="composer-footer"><span>Enter — отправить · Shift + Enter — новая строка</span><button id="send" type="submit" aria-label="Отправить">↑</button></div></form><div class="disclaimer">SpiderAI может ошибаться. Проверяй важную информацию.</div></footer>
+  </main>
+  <aside class="capabilities"><h3>Возможности <span>✦</span></h3><div class="cap"><div class="cap-icon violet">✎</div><div><b>Работа с текстом</b><p>Пиши, редактируй и придумывай</p></div></div><div class="cap"><div class="cap-icon blue">⌘</div><div><b>Программирование</b><p>Разбирайся в коде и проектах</p></div></div><div class="cap"><div class="cap-icon pink">✧</div><div><b>Творчество</b><p>Находи свежие идеи</p></div></div><div class="cap"><div class="cap-icon amber">◈</div><div><b>Обучение</b><p>Изучай новое шаг за шагом</p></div></div><div class="tip"><div class="tip-mark">✳</div><b>Большие идеи начинаются с вопроса.</b><p>Напиши, что у тебя на уме, — начнём.</p></div></aside>
+</div>
+<div id="toast" class="toast" role="status"></div><script src="/app.js"></script>
+</body></html>
